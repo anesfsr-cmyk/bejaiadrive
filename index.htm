@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Béjaïa Drive</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+}
+
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:70px;
+color:gold;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:gold;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:45px;
+color:gold;
+margin-bottom:50px;
+}
+
+.cars{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1a1a1a;
+border-radius:20px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.price{
+color:gold;
+font-size:30px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.info{
+line-height:1.8;
+color:#ccc;
+}
+
+.conditions{
+background:#111;
+border-radius:20px;
+padding:40px;
+line-height:2;
+font-size:20px;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+background:black;
+margin-top:60px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:18px 25px;
+border-radius:50px;
+font-size:20px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+<h1>BÉJAÏA DRIVE</h1>
+<p>Location de voitures premium à Béjaïa 🇩🇿</p>
+
+<a class="btn" href="https://wa.me/33619608206">
+Réserver maintenant
+</a>
+
+</div>
+</header>
+
+<section class="section">
+
+<h2 class="section-title">NOS VÉHICULES</h2>
+
+<div class="cars">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=2070">
+
+<div class="card-content">
+<h3>Peugeot 208</h3>
+<p class="price">35€/jour</p>
+
+<div class="info">
+✅ Boîte manuelle<br>
+📏 100 km / jour
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2083">
+
+<div class="card-content">
+<h3>Citroën C4X</h3>
+<p class="price">45€/jour</p>
+
+<div class="info">
+✅ Boîte automatique<br>
+📏 100 km / jour
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=2072">
+
+<div class="card-content">
+<h3>Renault Kangoo</h3>
+<p class="price">35€/jour</p>
+
+<div class="info">
+✅ Boîte manuelle<br>
+📏 100 km / jour
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070">
+
+<div class="card-content">
+<h3>C3 Aircross</h3>
+<p class="price">45€/jour</p>
+
+<div class="info">
+✅ Boîte automatique<br>
+📏 100 km / jour
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">CONDITIONS</h2>
+
+<div class="conditions">
+
+🪪 5 ans de permis minimum<br>
+🔒 Caution : passeport + 500€<br>
+📏 Kilométrage limité à 100 km / jour<br>
+⛽ Carburant à la charge du client<br>
+📍 Livraison possible à Béjaïa
+
+</div>
+
+</section>
+
+<footer>
+
+<h2 style="color:gold;margin-bottom:20px;">CONTACT</h2>
+
+<p>🇫🇷 WhatsApp : +33 619 608 206</p>
+<p>🇩🇿 WhatsApp : +213 771 315 996</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/33619608206">
+WhatsApp
+</a>
+
+</body>
+</html>
